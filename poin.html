@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRASHURE - Poin Kamu</title>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <section id="header">
+    <a href="index.html" class="brand">
+      <img src="logo.png" class="logo" alt="Trashure Logo">
+      <span class="brand-text">TRASHURE</span>
+    </a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="aboutus.html">Tentang Kami</a></li>
+        <li><a href="Panduan.html">Panduan</a></li>
+        <li><a href="jemput.html">Buang sampah</a></li>
+        <li><a class="active" href="poin.html">Poin Kamu</a></li>
+        <li><a href="donasi.html">Donasi Kamu</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+<main id="poin-page">
+
+  <section class="poin-dashboard">
+
+    <!-- BAGAN 1 -->
+    <div class="bagan besar">
+      <h3>Total Plastik Terkumpul</h3>
+      <p class="angka" id="totalKg">0 kg</p>
+      <p class="ket">
+        Berat akan terupdate otomatis setelah petugas truk input hasil timbangan.
+      </p>
+    </div>
+
+    <!-- BAGAN 2 -->
+    <div class="bagan-row">
+
+      <!-- TARIK -->
+      <div class="bagan kecil">
+        <h3>Tarik Saldo</h3>
+        <p class="angka" id="saldoTarik">Rp 0</p>
+        <p class="ket">
+          Konversi: 50 kg = Rp 100.000
+        </p>
+
+        <a href="belumtersedia.html" class="btn-bagan">Tarik Sekarang</a>
+
+    </div>
+    
+     <!-- DONASI -->
+     <div class="bagan kecil">
+        <h3>Donasikan</h3>
+        <p class="angka" id="saldoDonasi">Rp 0</p>
+        <p class="ket">
+            Donasi dialokasikan untuk pembangunan sekolah dari blok plastik.
+        </p>
+
+        <a href="donasi.html" class="btn-bagan donasi">Donasi Sekarang</a>
+
+    <div class="bagan-row">
+
+    </div>
+
+
+</main>
+
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRASHURE - Jemput Sampah</title>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <section id="header">
+    <a href="index.html" class="brand">
+        <img src="logo.png" class="logo" alt="Trashure Logo">
+        <span class="brand-text">TRASHURE</span>
+    </a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="aboutus.html">Tentang Kami</a></li>
+        <li><a href="Panduan.html">Panduan</a></li>
+        <li><a class="active" href="jemput.html">Buang Sampah</a></li>
+        <li><a href="poin.html">Poin Kamu</a></li>
+        <li><a href="donasi.html">Donasi Kamu</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="jemput-page">
+
+    <section class="jemput-title">
+      <h1>Jemput Sampah Plastik</h1>
+      <p>Isi data di bawah ini untuk memanggil truk penjemput sampah plastik.</p>
+    </section>
+
+    <hr>
+
+    <section class="jemput-form">
+      <form action="thanks.html">
+
+        <label for="nama">Nama Lengkap</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        <br><br>
+
+        <label for="hp">Nomor HP / WhatsApp</label><br>
+        <input type="tel" id="hp" name="hp" placeholder="Contoh: 08xxxxxxxxxx" required>
+        <br><br>
+
+        <label for="alamat">Alamat Lengkap</label><br>
+        <textarea id="alamat" name="alamat" rows="4" placeholder="Tulis alamat lengkap" required></textarea>
+        <br><br>
+
+        <label for="patokan">Patokan Lokasi (Opsional)</label><br>
+        <input type="text" id="patokan" name="patokan" placeholder="Contoh: dekat pura / warung / dll">
+        <br><br>
+
+        <label for="perkiraan">Perkiraan Jumlah Plastik (Opsional)</label><br>
+        <select id="perkiraan" name="perkiraan">
+          <option value="">-- Pilih --</option>
+          <option value="1_Kg">1 kilogram</option>
+          <option value="5_Kg">5 kilogram</option>
+          <option value="lebih">Lebih dari itu</option>
+        </select>
+        <br><br>
+
+        <label for="jadwal">Jadwal Penjemputan</label><br>
+        <select id="jadwal" name="jadwal" required>
+          <option value="">-- Pilih Jadwal --</option>
+          <option value="hari_ini">Hari Ini</option>
+          <option value="besok">Besok</option>
+          <option value="pilih_tanggal">Pilih Tanggal</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Kirim Permintaan</button>
+    </form action="thanks.html">
+    </section>
+
+    <hr>
+
+    <section class="jemput-ketentuan">
+      <h2>Ketentuan</h2>
+      <ul>
+        <li>Hanya menerima sampah plastik.</li>
+        <li>Plastik harus bersih dan kering.</li>
+        <li>Berat sampah akan ditimbang oleh petugas truk.</li>
+        <li>Poin akan masuk otomatis setelah petugas menginput data.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
